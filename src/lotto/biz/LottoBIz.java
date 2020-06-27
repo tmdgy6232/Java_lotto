@@ -34,8 +34,13 @@ public class LottoBIz {
                 int lottoNum = rnd.nextInt(45) + 1;
                 pickList.add(lottoNum);
             }
-            Collections.shuffle(pickList);
-            int lottoNum = pickList.get(rnd.nextInt(77));
+
+            int lottoNum = 0;
+
+            for (int i =0; i<77; i++){
+                Collections.shuffle(pickList);
+                lottoNum = pickList.get(rnd.nextInt(77));
+            }
 
             // 조건문 생성
             if (!lottoArray.contains(lottoNum)){
@@ -55,20 +60,5 @@ public class LottoBIz {
         //정렬 메서드
         lottoArray.sort(Comparator.naturalOrder());
     return lottoArray;
-    }
-
-
-    /* ========================================================
-     *  @ 메소드 설명 : 데이터 중복 제거
-     *  @ 작성자 : seunghyo
-     *  @ 작성일 : 2020.06.20
-     *  ========================================================
-     * */
-
-    public List<Integer> duplicationRemove(List<Integer> lottoArray){
-
-
-
-        return lottoArray;
     }
 }
