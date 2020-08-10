@@ -37,7 +37,7 @@ public class LottoBIz {
 
             int lottoNum = 0;
 
-            for (int i =0; i<30; i++){
+            for (int i =0; i<77; i++){
                 Collections.shuffle(pickList);
                 lottoNum = pickList.get(rnd.nextInt(77));
             }
