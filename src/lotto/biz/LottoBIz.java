@@ -30,14 +30,14 @@ public class LottoBIz {
 
             // 컴터의 랜덤을 더욱 랜덤하게 만들고자 기능 추가
             List<Integer> pickList = new ArrayList<>();
-            for (int i = 0; i < 94; i++){
+            for (int i = 0; i < 777; i++){
                 int lottoNum = rnd.nextInt(45) + 1;
                 pickList.add(lottoNum);
             }
 
             int lottoNum = 0;
 
-            for (int i =0; i<94; i++){
+            for (int i =0; i<7777; i++){
                 Collections.shuffle(pickList);
                 lottoNum = pickList.get(rnd.nextInt(9));
             }
