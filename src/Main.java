@@ -1,10 +1,17 @@
 import lotto.biz.LottoBIz;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         LottoBIz lottoBIz = new LottoBIz();
+        Scanner scanner = new Scanner(System.in);
+
+        // lotto array Total List
+        List<List<Integer>> lottoArrayList = new ArrayList<>();
+
 
         for (int i=0; i<5; i++) {
             // 번호 생성
