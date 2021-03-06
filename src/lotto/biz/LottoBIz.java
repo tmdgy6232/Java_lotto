@@ -28,7 +28,7 @@ public class LottoBIz {
             // 0~45까지 난수 생성
 
 
-            // 컴터의 랜덤을 더욱 랜덤하게 만들고자 기능 추가
+            // 랜덤메서드를 더욱 랜덤하게 만들고자 기능 추가
             List<Integer> pickList = new ArrayList<>();
             for (int i = 0; i < 777; i++){
                 int lottoNum = rnd.nextInt(45) + 1;
